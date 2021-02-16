@@ -1,0 +1,81 @@
+
+
+__________________________________STUDENT TABLE ___________________________________
+
+create table student(
+AdmId char(4) primary key,
+name char(20) not null,
+age int(10),
+gender char(20),
+fname char(20),
+dob date,
+class char(10),
+address varchar(40));
+
+
+_________________________________STUDNET DATA__________________________________
+
+insert into student values('S001','SURAJ SINGH',17,'JANRAJ SINGH','2003-09-30','12TH IT','#207 KAIMBWALA CHANDIGARH CHANDIGARH');
+
+
+
+
+____________________________________FEE TABLE __________________________________
+ 
+
+create table fee(
+     AdmId char(4) primary key,
+     Fee_Amount decimal(7,2),
+     Last_Datet date);
+
+_______________________________________DATA ENTERY IN FEE ____________________________________
+
+
+ insert into fee values('S001',1800,'2021-02-15');
+
+
+
+
+
+
+
+________________________________TEACHER TABLE ________________________________
+ create table teacher(
+     TID char(4) primary key,
+    TNAME char(20) not null,
+    GENDER char(15),
+    CLASS_INCHARGE char(20),
+     EXPERIENCE int);
+
+
+
+______________________________________TEACHER DATA ENTERY ________________________________________________
+
+insert into teacher values('T001','ANU RATHI','FEMALE','10',3);
+
+insert into teacher values('T002','YOGESH KUMAR','MALE','12TH IT',8);
+
+ insert into teacher values('T003','RANA PRATAP SINGH','MALE','8',2);
+
+insert into teacher values('T004','ABHA KAUAR','FEMALE','7',3);
+
+insert into teacher values('T005','RANI RANA','FEMALE','11',5);
+
+insert into teacher values('T006','SAVITA YADAV','FEMALE','10',9);
+
+insert into teacher values('T007','LAXMI','FEMALE','12',6);
+
+insert into teacher values('T008','SACHIN','MALE','11',7);
+
+insert into teacher values('T009','MUKUL','MALE','10',3);
+
+
+
+___________________________________________________QUERY TABLE _____________________________________________
+
+create table query(msg varchar(300));
+
+_______________________________________________________QUERY VALUES______________________________________
+
+insert into query values('website not working ');
+
